@@ -1,0 +1,11 @@
+@import '../../../styles/variables.scss';
+
+.container {
+  color: $color-light-gray;
+  width: 100%;
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
