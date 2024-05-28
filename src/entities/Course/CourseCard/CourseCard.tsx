@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { Typography } from '../../../shared/components';
 import { Course } from '../../../shared/types/courses';
 import styles from './style.module.scss';
@@ -6,7 +7,7 @@ interface Props {
   course: Course;
 }
 
-export const CourseCard = ({ course }: Props) => {
+export const CourseCard = memo(({ course }: Props) => {
   return (
     <div className={styles.container}>
       <div className={styles.imageContainer} style={{ backgroundColor: course.bgColor }}>
@@ -24,4 +25,4 @@ export const CourseCard = ({ course }: Props) => {
       </div>
     </div>
   );
-};
+});
